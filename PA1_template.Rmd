@@ -27,7 +27,8 @@ sum_steps<-ddply(data, .(date), summarise, TotalSteps=sum(steps))
 For creating hitogram I use the function `hist`. Note that the data has NA values so i use the option `na.rm=TRUE`. Here is R code to do that.
 
 ```{r}
-hist(sum_steps$TotalSteps,col = "lightblue", border = "red",xlab="Vlue for Data mean number of steps")
+hist(sum_steps$TotalSteps,col = "lightblue", border = "red",xlab="Vlue for Data mean number of steps",main='Histogram total number of steps each day')
+
 ```
 
 - Calculate mean and median steps taken per day.
